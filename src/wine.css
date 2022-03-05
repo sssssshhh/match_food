@@ -1,0 +1,41 @@
+body {
+    background-color: blanchedalmond;
+    justify-content: center;
+    /* screen center align */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+ 
+}
+
+.container .row {
+    display: flex;  
+}
+
+.container .row .wine {
+    width: 200px;
+    height: 200px;
+    background-color: darkgoldenrod;
+    margin: 4px; 
+    
+    /* center align */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border */
+    border-radius: 15px;
+    box-shadow: 10px 4px 20px darkgoldenrod;
+}
+
+.container .row .wine:hover {
+    cursor:pointer;
+}
+
+/* css for Searching */
+.hide {
+    display: none;
+}
