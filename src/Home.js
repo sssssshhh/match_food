@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faColonSign, faWineBottle } from '@fortawesome/free-solid-svg-icons';
 import { faWineGlass } from '@fortawesome/free-solid-svg-icons';
-import { faWineGlassEmpty } from '@fortawesome/free-solid-svg-icons';
+import { faIceCream } from '@fortawesome/free-solid-svg-icons';
 import { faMartiniGlass } from '@fortawesome/free-solid-svg-icons';
 import { faFish } from '@fortawesome/free-solid-svg-icons';
-import { faChampagneGlasses } from '@fortawesome/free-solid-svg-icons';
+import { faCheese } from '@fortawesome/free-solid-svg-icons';
+import { faLemon } from '@fortawesome/free-solid-svg-icons';
 
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -25,41 +25,41 @@ const Home = () => {
         <div className="container">
             <div className="row">
                 <div className="wine">
-                    <Link to="/wine1">
-                        <FontAwesomeIcon icon={faWineBottle} size="6x" style={{ color: 'DarkOrchid' }} />
+                    <Link to="/lemon">
+                        <FontAwesomeIcon icon={faLemon} size="6x" style={{ color: 'Yellow' }} />
                     </Link>
                 </div>
                 <div className="wine">
-                    <Link to="/wine2">
+                    <Link to="/wine">
                         <FontAwesomeIcon icon={faWineGlass} size="6x" style={{ color: 'DarkMagenta' }} />
                     </Link>
                 </div>
             </div>
             <div className="row">
                 <div className="wine">
-                    <Link to="/wine3">
-                        <FontAwesomeIcon icon={faWineGlassEmpty} size="6x" style={{ color: 'FireBrick' }} />
+                    <Link to="/icecream">
+                        <FontAwesomeIcon icon={faIceCream} size="6x" style={{ color: 'RosyBrown' }} />
                     </Link>
                 </div>
                 <div className="wine">
-                    <Link to="/wine4">
-                        <FontAwesomeIcon icon={faMartiniGlass} size="6x" style={{ color: 'Indigo' }} />
+                    <Link to="/martini">
+                        <FontAwesomeIcon icon={faMartiniGlass} size="6x" style={{ color: 'MediumTurquoise' }} />
                     </Link>
                 </div>
             </div>
             <div className="row">
                 <div className="wine">
-                    <Link to="/wine5">
-                        <FontAwesomeIcon icon={faFish} size="6x" style={{ color: 'MediumOrchid' }} />
+                    <Link to="/fish">
+                        <FontAwesomeIcon icon={faFish} size="6x" style={{ color: 'RoyalBlue' }} />
                     </Link>
                 </div>
                 <div className="wine">
-                    <Link to="/wine6">
-                        <FontAwesomeIcon icon={faChampagneGlasses} size="6x" style={{ color: 'RebeccaPurple' }} />
+                    <Link to="/cheese">
+                        <FontAwesomeIcon icon={faCheese} size="6x" style={{ color: 'Orange' }} />
                     </Link>
                 </div>
             </div>
-            <input type="text" placeholder="write the name of wine" autoFocus onKeyPress={getSearchKeyword}></input>
+            <input className="search" type="text" placeholder="CLICK HERE" autoFocus onKeyPress={getSearchKeyword}></input>
         </div>
     )
 }

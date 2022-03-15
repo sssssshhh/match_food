@@ -7,10 +7,6 @@ body {
     align-items: center;
 }
 
-.container {
- 
-}
-
 .container .row {
     display: flex;  
 }
@@ -18,7 +14,7 @@ body {
 .container .row .wine {
     width: 200px;
     height: 200px;
-    background-color: darkgoldenrod;
+    background-color: BurlyWood;
     margin: 4px; 
     
     /* center align */
@@ -28,14 +24,60 @@ body {
 
     /* border */
     border-radius: 15px;
-    box-shadow: 10px 4px 20px darkgoldenrod;
+    box-shadow: 10px 4px 20px BurlyWood;
 }
 
 .container .row .wine:hover {
     cursor:pointer;
 }
+/* css for search box*/
+.search {
+    margin-top: 7px;
+
+    padding: 0 0 0 150px;
+    display: block;
+    box-sizing: border-box;
+    width: 400px;
+    height:50px;
+    background: blanchedalmond;
+    border: 1px blanchedalmond;
+
+    /* keyword font setting */
+    color: MediumOrchid; 
+    font-size: 20px;
+
+    position: relative;
+}
+
+.search:focus {
+    outline: none;
+}
 
 /* css for Searching */
 .hide {
     display: none;
+}
+
+.searchable {
+    font-size: 50px;
+    font-family: monospace;
+    color: LightCoral;
+
+    /* center(almost) */
+    width: 800px;
+    padding: 300px;
+}
+
+/* css for search result*/
+.showKeyword {
+    font-size: 50px;
+    font-family: monospace;
+    color: Chocolate;
+    margin-bottom: 20px;
+}
+
+.result {
+    font-size: 30px;
+    font-family: monospace;
+    color: CornflowerBlue;
 }
